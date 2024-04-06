@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arman's Site</title>
+        <link rel="stylesheet" href="my_website_css/my_website_general.css">
+        <link rel="stylesheet" href="my_website_css/my_website_home_buttons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+    <body>
+        <div class="content">
+            <div class = header>
+                <div class="header-left">
+                    <div class="home">
+                        <button class="home-button">
+                            <img class="home-button-icon" src="button_icons/home-button.svg">
+                            Home
+                        </button>
+                    </div>
+                    <div class="about_me">
+                        <button onclick="goToPage('my_website_about.html')" class="about-button">About Me</button>
+                    </div>
+                    <div class="experience">
+                        <button onclick="goToPage('my_website_experience.html')" class = "experience-button">Experience</button>
+                    </div>
+                </div>
+                <div class = "header-right">
+                    <a target="_blank" href="https://www.linkedin.com/in/armanvoss/">
+                        <img class="linkedin" src="images/Linkedin-512.webp">
+                    </a>
+                    <a target="_blank" href="https://github.com/ArmaVoss">
+                        <img class="github" src="images/Ei-sc-github.svg.png">
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <p class="welcome">Welcome</p>
+                <p class="welcome-message">
+                    This website serves as the hub of my work and projects. 
+                </p>
+            </div>
+        </div>
+        <script src="buttons.js"></script>
+    </body>
+</html>

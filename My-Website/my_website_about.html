@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arman's Site</title>
+        <link rel="stylesheet" href="my_website_css/my_website_general.css">
+        <link rel="stylesheet" href="my_website_css/my_website_about_buttons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <div class = "header">
+                <div class="header-left">
+                    <div class="home">
+                        <button onclick="goToPage('my_website.html')" class="home-button">
+                            <img class="home-button-icon" src="button_icons/home-button.svg">
+                            Home
+                        </button>
+                    </div>
+                    <div class="about_me">
+                        <button class = "about-button">About Me</button>
+                    </div>
+                    <div class="experience">
+                        <button class = "experience-button" onclick="goToPage('my_website_experience.html')">Experience</button>
+                    </div>
+                </div>
+                <div class = "header-right">
+                    <a target="_blank" href="https://www.linkedin.com/in/armanvoss/">
+                        <img class="linkedin" src="images/Linkedin-512.webp">
+                    </a>
+                    <a target="_blank" href="https://github.com/ArmaVoss">
+                        <img class="github" src="images/Ei-sc-github.svg.png">
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <p class="about-message">
+                    About Me
+                </p>
+                <p class="about-paragraph">
+                    To give some background about myself, I'm a 21 year old college student studying computer science at
+                    Boston University. As long as I can remember, I always loved computers, which I think stemmed from my passion for
+                    video games. 
+                </p>
+                <p class="about-paragraph">
+                    I chose to study computer science stricly out of my passion for computers and technology,
+                    but I never really coded before college. Now, I find myself as a third year university student looking
+                    for an internship in software engineering. Outside of school, some of my hobbies include working on cars,
+                    hanging out with friends, exercising daily, and working on my career and personal projects. 
+                </p>
+
+                <p class="about-paragraph">
+                    Outside of school, some of my hobbies include working on cars,
+                    hanging out with friends, exercising daily, and working on my career and personal projects. 
+                </p>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="images/IMG_8810.jpg" />
+                        <img id="slide-2" src="images/IMG_3468.jpg" />
+                        <img id="slide-3" src="images/IMG_1246.jpg" />
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="buttons.js"></script>
+        
+    </body>
+</html>
