@@ -193,14 +193,13 @@ hr{
     opacity: 1;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance: none) {
-        .slider img {
-            object-fit: contain; /* or other adjustments specific to Safari */
-            flex: 0 0 auto; 
-            width: 100%; 
-            height: auto; 
-            scroll-snap-align: start;
-        }
+@media (max-width: 800px) {
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 800px;
+        align-items: center;
+        justify-content: center;
     }
+    
 }
