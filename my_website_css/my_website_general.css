@@ -168,6 +168,7 @@ hr{
     height: auto; 
     scroll-snap-align: start;
     object-fit: cover; 
+    
 }
 
 .slider-nav {
@@ -193,13 +194,32 @@ hr{
     opacity: 1;
 }
 
-@media (max-width: 800px) {
-    .content{
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 800px;
-        align-items: center;
-        justify-content: center;
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;  
     }
-    
+
+    .header-left,
+    .header-right {
+        width: 100%;  
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .about-paragraph,
+    .job-description,
+    .welcome-message,
+    .about-message {
+        font-size: 16px; 
+    }
+
+    .slider-wrapper {
+        max-width: 100%;
+    }
+
+    .slider img {
+        object-fit: contain; 
+    }
 }
