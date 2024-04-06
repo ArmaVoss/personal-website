@@ -197,6 +197,10 @@ hr{
     @supports (-webkit-appearance: none) {
         .slider img {
             object-fit: contain; /* or other adjustments specific to Safari */
+            flex: 0 0 auto; 
+            width: 100%; 
+            height: auto; 
+            scroll-snap-align: start;
         }
     }
 }
