@@ -193,3 +193,10 @@ hr{
     opacity: 1;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+        .slider img {
+            object-fit: contain; /* or other adjustments specific to Safari */
+        }
+    }
+}
